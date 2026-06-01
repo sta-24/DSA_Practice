@@ -1,7 +1,7 @@
 def encode(strs):
     op=""
     for i in strs:
-        op+=str(len(i))+'#'+i
+        op+= str(len(i))+'#'+i
     return op
 
 
