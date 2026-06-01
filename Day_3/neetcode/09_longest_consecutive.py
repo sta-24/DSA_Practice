@@ -1,5 +1,6 @@
 def longest_consecutive(nums):
     numset=set(nums)
+    nums.sort
     longest=0
 
     for num in numset:
