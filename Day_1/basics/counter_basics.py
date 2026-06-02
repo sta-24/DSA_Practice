@@ -1,6 +1,8 @@
 from collections import Counter
 nums=[1,1,1,2,3,3,4,4,5,4,4]
-k=3
+c=Counter(nums)
+print(c)
+"""k=3
 
 print(Counter(nums))
 
@@ -10,4 +12,4 @@ for i in Counter(nums):
         break
     op.append(i)
 
-print(op)
+print(op)"""
