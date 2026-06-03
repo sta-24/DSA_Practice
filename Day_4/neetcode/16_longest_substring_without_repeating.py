@@ -1,5 +1,19 @@
-def lengthoflongestSubstring(s):
-    pass
+def lengthOfLongestSubstring(s):
+    l=0
+    longest=0
+    sett=set()
+    n=len(s)
+    for r in range(n):
+        while s[r] in sett:
+            sett.remove(s[l])
+            l+=1
+        w=(r-l)+1
+        longest=max(w,longest)
+        sett.add(s[r])
+    return longest
 
 
-assert lengthoflongestSubstring("zxyzxyz")==3
+
+assert lengthOfLongestSubstring("abcabc")==3
+assert lengthOfLongestSubstring("zxyzxyz")==3
+print("All Passes")
