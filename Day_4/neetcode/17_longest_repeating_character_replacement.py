@@ -6,7 +6,7 @@ def characterReplacement(s,k):
     for r in range(n):
         count[ord(s[r])-65]+=1
         while (r-l+1)-max(count)>k:
-            count[ord(s[l])-65]-=1
+            count[ord(s[l]-65)]-=1
             l+=1
         longest=max(longest,(r-l+1))
     return longest
